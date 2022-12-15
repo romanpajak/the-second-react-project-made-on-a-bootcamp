@@ -6,10 +6,8 @@ function FormContainer({
   getCurrencyVal,
   loaderStatus,
 }) {
-  let loader = "btn-submit btn-sm rounded";
-  if (loaderStatus === true) {
-    loader += " button-loading btn-color-on-loader";
-  }
+
+  const loader = loaderStatus ? "btn-submit btn-sm rounded button-loading btn-color-on-loader" : "btn-submit btn-sm rounded";
   return (
     <div className="col-sm">
       <form id="calculator">

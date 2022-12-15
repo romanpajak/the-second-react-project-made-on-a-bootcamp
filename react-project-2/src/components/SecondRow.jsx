@@ -4,13 +4,7 @@ import ResultContainer from "./ResultContainer";
 function SecondRow() {
   const [outVal, setOutVal] = useState("0 PLN");
   const [numbInputValue, setNumbInputValue] = useState("");
-  const handleInputChange = (e) => {
-    setNumbInputValue(e.target.value);
-  };
   const [currencySelectValue, setCurrencySelectValue] = useState("");
-  const handleSelectCurrency = (e) => {
-    setCurrencySelectValue(e.target.value);
-  };
   const [firstInfo, setFirstInfo] = useState("To");
   const [infoColor, setInfoColor] = useState("normal-color");
   const [loaderClass, setLoaderClass] = useState(false);
@@ -48,10 +42,10 @@ function SecondRow() {
   return (
     <div className="row second-row">
       <FormContainer
-        handleChange={handleInputChange}
+        handleChange={e => setNumbInputValue(e.target.value)}
         numbValue={numbInputValue}
         currencyValue={currencySelectValue}
-        handleCurrency={handleSelectCurrency}
+        handleCurrency={e => setCurrencySelectValue(e.target.value)}
         getCurrencyVal={calculateCurrency}
         loaderStatus={loaderClass}
       />
