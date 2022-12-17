@@ -1,6 +1,6 @@
 {
   "name": "react-project-2",
-  "homepage": "https://romanpajak.github.io/react-project-2/",
+  "homepage": "./",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
