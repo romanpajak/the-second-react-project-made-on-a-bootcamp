@@ -4,7 +4,7 @@ import ResultContainer from "./ResultContainer";
 function SecondRow() {
   const [outVal, setOutVal] = useState("0 PLN");
   const [numbInputValue, setNumbInputValue] = useState("");
-  const [currencySelectValue, setCurrencySelectValue] = useState("");
+  const [currencySelectValue, setCurrencySelectValue] = useState("EUR");
   const [firstInfo, setFirstInfo] = useState("To");
   const [infoColor, setInfoColor] = useState("normal-color");
   const [loaderClass, setLoaderClass] = useState(false);

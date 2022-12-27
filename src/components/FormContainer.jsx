@@ -6,8 +6,7 @@ function FormContainer({
   getCurrencyVal,
   loaderStatus,
 }) {
-
-  const loader = loaderStatus ? "btn-submit btn-sm rounded button-loading btn-color-on-loader" : "btn-submit btn-sm rounded";
+  const loader = loaderStatus ? "button-loading btn-color-on-loader" : "";
   return (
     <div className="col-sm">
       <form id="calculator">
@@ -35,7 +34,7 @@ function FormContainer({
             id="btn-calc"
             type="button"
             onClick={getCurrencyVal}
-            className={loader}
+            className={`tn-submit btn-sm rounded ${loader} `}
           >
             Przelicz
           </button>
