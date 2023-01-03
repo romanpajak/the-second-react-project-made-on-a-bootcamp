@@ -41,6 +41,9 @@
 .warning-color {
   color: red;
 }
+.button-loading {
+  position: relative;
+}
 .button-loading::after {
   content: "";
   position: absolute;
